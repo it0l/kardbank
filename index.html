@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kardbank</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/ico.png" type="image/x-icon">
+</head>
+<body>
+    <div class="background-wave"></div>
+    
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <i class="fa-solid fa-xmark close-menu" id="close-menu"></i>
+        </div>
+        
+        <div class="sidebar-brand-info">
+            <img src="img/logoo.png" alt="Kardbank Logo" class="sidebar-logo">
+            <h3>Kardbank</h3>
+        </div>
+
+        <ul class="sidebar-menu">
+            <li><a href="tel:08006468378"><i class="fa-solid fa-phone"></i><div>Fone<br><span>0800 646-8378</span></div></a></li>
+            <li><a href="https://wa.me/5511972076241" target="_blank"><i class="fa-solid fa-comment-dots"></i><div>WhatsApp<br><span>+55 11 97207-6241</span></div></a></li>
+            <li><a href="mailto:kardbankatendimento@gmail.com"><i class="fa-solid fa-envelope"></i><div>E-mail<br><span>kardbankatendimento@gmail.com</span></div></a></li>
+            <li><a href="https://firebasestorage.googleapis.com/v0/b/kardbank-643e2.appspot.com/o/termos%2FTermos%20e%20Uso%20App%20e%20Site%20a%20partir%20de%20Junho22.pdf?alt=media&token=83e1fed1-291f-414a-a11d-7de0ef6e6340" target="_blank"><i class="fa-solid fa-star"></i><div>Termos de Uso</div></a></li>
+            <li><a href="https://www.facebook.com/kardbankbr" target="_blank"><i class="fa-brands fa-facebook"></i><div>Facebook</div></a></li>
+        </ul>
+        
+        <div class="sidebar-footer">
+            <div class="footer-col"><p>Módulo</p><span>Auto Contratação</span></div>
+            <div class="footer-col text-right"><p>Versão</p><span>3.3</span></div>
+        </div>
+    </nav>
+
+    <header>
+        <i class="fa-solid fa-bars menu-toggle" id="open-menu"></i>
+        <img src="img/kardbank-removebg-preview.png" alt="Kardbank Logo" class="logo">
+    </header>
+
+    <main id="app-container">
+        <section id="step-cpf" class="card active">
+            <h2>Olá cliente Kardbank!<br>Confirme suas informações para ter acesso:</h2>
+            <form id="form-cpf">
+                <div class="input-group">
+                    <i class="fa-regular fa-user"></i>
+                    <input type="text" id="cpf-input" placeholder="Informe seu CPF" required maxlength="14">
+                </div>
+                <button type="submit" class="btn-primary">AVANÇAR</button>
+            </form>
+        </section>
+
+        <section id="step-contract" class="card hidden">
+            <h2>Termos e Condições do Contrato</h2>
+            
+            <div class="contract-scroll">
+                <h3>1 – DO OBJETO</h3>
+                <p><strong>Cláusula 1:</strong> Formaliza a quitação definitiva da dívida. Após o pagamento, a obrigação financeira é extinta.</p>
+
+                <h3>2 – DA FORMA DE PAGAMENTO</h3>
+                <p><strong>Cláusula 2:</strong> Define meios e condições de pagamento. Instruções do credor devem ser seguidas rigorosamente.</p>
+                <p><strong>Cláusula 3:</strong> Quitação eficaz somente após compensação bancária. Agendamento não é quitação.</p>
+                <p><strong>Cláusula 23:</strong> Encargos e tarifas bancárias são de responsabilidade do devedor.</p>
+
+                <h3>3 – DA QUITAÇÃO E EXTINÇÃO DA DÍVIDA</h3>
+                <p><strong>Cláusula 4:</strong> Descontos excepcionais para esta negociação. Sem novos descontos após quitação.</p>
+                <p><strong>Cláusula 5:</strong> Confirmado o pagamento, o contrato é encerrado sem obrigações pendentes.</p>
+                <p><strong>Cláusula 13:</strong> Comprovante de pagamento é essencial para validar a quitação.</p>
+
+                <h3>4 – DA IRREVOGABILIDADE E IRRETRATABILIDADE</h3>
+                <p><strong>Cláusula 6:</strong> Termos não podem ser alterados unilateralmente após formalização.</p>
+                <p><strong>Cláusula 28:</strong> Contrato celebrado em caráter irrevogável e irretratável.</p>
+
+                <h3>5 – DAS DECLARAÇÕES DAS PARTES</h3>
+                <p><strong>Cláusula 7:</strong> Partes garantem que as informações fornecidas são verdadeiras e autênticas.</p>
+                <p><strong>Cláusula 21:</strong> Devedor declara pleno conhecimento de valores, prazos e consequências.</p>
+                <p><strong>Cláusula 29:</strong> Devedor declara não possuir impedimentos legais para firmar o acordo.</p>
+
+                <h3>6 – DA VALIDADE JURÍDICA DO CONTRATO</h3>
+                <p><strong>Cláusula 8:</strong> Documento possui validade jurídica plena como prova legal.</p>
+                <p><strong>Cláusula 31:</strong> Pode ser assinado de forma física ou digital com os mesmos efeitos.</p>
+                <p><strong>Cláusula 32:</strong> Entra em vigor na data da assinatura com efeitos imediatos.</p>
+
+                <h3>7 – DO ATENDIMENTO E COMUNICAÇÃO</h3>
+                <p><strong>Cláusula 9:</strong> Atendimento exclusivo pelos canais oficiais do credor.</p>
+                <p><strong>Cláusula 15:</strong> Confidencialidade absoluta sobre informações contratuais e pessoais.</p>
+                <p><strong>Cláusula 26:</strong> Reconhecimento de validade das comunicações eletrônicas oficiais.</p>
+
+                <h3>8 – DO FORO</h3>
+                <p><strong>Cláusula 10:</strong> Conflitos serão resolvidos no foro do domicílio do devedor.</p>
+
+                <h3>9 – DA CONFIDENCIALIDADE E PROTEÇÃO DE DADOS</h3>
+                <p><strong>Cláusula 11:</strong> Dever de sigilo sobre termos financeiros e pessoais.</p>
+                <p><strong>Cláusula 12:</strong> Tratamento de dados pessoais em conformidade com a LGPD.</p>
+
+                <h3>10 – DO DESCUMPRIMENTO E PENALIDADES</h3>
+                <p><strong>Cláusula 14:</strong> Descumprimento pode restabelecer condições originais da dívida.</p>
+                <p><strong>Cláusula 30:</strong> Descumprimento enseja medidas administrativas e judiciais.</p>
+
+                <h3>11 – DAS DISPOSIÇÕES GERAIS</h3>
+                <p><strong>Cláusula 17:</strong> Não exercício de direitos não implica renúncia dos mesmos.</p>
+                <p><strong>Cláusula 18:</strong> Tolerâncias não constituem novação ou alteração contratual.</p>
+                <p><strong>Cláusula 19:</strong> Obriga as partes e seus herdeiros ou sucessores.</p>
+                <p><strong>Cláusula 20:</strong> Alterações somente por escrito e assinadas por ambas as partes.</p>
+                <p><strong>Cláusula 22:</strong> Credor pode realizar auditorias para garantir conformidade de dados.</p>
+                <p><strong>Cláusula 24:</strong> Cooperação mútua em caso de erro operacional ou bancário.</p>
+                <p><strong>Cláusula 25:</strong> Substitui quaisquer entendimentos ou negociações anteriores.</p>
+                <p><strong>Cláusula 27:</strong> Invalidade de uma cláusula não afeta a vigência das demais.</p>
+            </div>
+
+            <form id="form-contract">
+                <div class="checkbox-group">
+                    <input type="checkbox" id="agree-terms" required>
+                    <label for="agree-terms">Li e concordo com todos os termos e condições descritos acima.</label>
+                </div>
+                <button type="submit" id="btn-sign" class="btn-primary" disabled>ASSINAR DIGITALMENTE</button>
+            </form>
+        </section>
+
+        <section id="step-success" class="card hidden text-center">
+            <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+            <h2>CONTRATO ASSINADO DIGITAL</h2>
+            <p>Você pode sair desta página.</p>
+        </section>
+    </main>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
